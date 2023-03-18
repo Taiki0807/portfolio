@@ -1,0 +1,33 @@
+.About__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.About__item .text1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin-top: 1em;
+}
+.About__item .text2 {
+  text-align: center;
+  line-height: 1.5;
+  padding: 1.25em;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4b5563;
+  display: inline-block;
+  border-bottom: 2px solid #e5e7eb;
+}
+.media {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.img {
+  margin-top: 20px;
+}

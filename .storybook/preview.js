@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export const parameters = {
   nextjs: {
     appDirectory: true,
@@ -9,4 +10,10 @@ export const parameters = {
       date: /Date$/,
     },
   },
+};
+Image.propTypes = {
+  unoptimized: null,
+};
+Image.defaultProps = {
+  unoptimized: true,
 };

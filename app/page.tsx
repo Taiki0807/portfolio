@@ -1,3 +1,9 @@
+import { Page } from './components/pages';
+
 export default function Home() {
-  return <div>hello</div>;
+  return (
+    <div>
+      <Page />
+    </div>
+  );
 }
