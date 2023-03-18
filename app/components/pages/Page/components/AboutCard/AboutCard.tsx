@@ -31,7 +31,7 @@ export const AboutCard = (): JSX.Element => {
             <FaGithub size={32} />
           </Icon>
           <Icon
-            color={'blue'}
+            color={'cyan'}
             url={'https://twitter.com/M4Cx4'}
             name={'twitter'}
           >

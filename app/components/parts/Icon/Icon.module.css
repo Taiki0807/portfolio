@@ -9,8 +9,8 @@
 .icon-black {
   color: black;
 }
-.icon-blue {
-  color: blue;
+.icon-cyan {
+  color: #1da1f2;
 }
 .icon-white {
   color: white;
@@ -19,8 +19,8 @@
   background-color: black;
   color: #ffffff;
 }
-.icon-blue:hover {
-  background-color: blue;
+.icon-cyan:hover {
+  background-color: #1da1f2;
   color: #ffffff;
 }
 .icon-white:hover {
