@@ -6,6 +6,9 @@ const nextConfig = {
   eslint: {
     dirs: ['app'],
   },
+  images: {
+    domains: ['placehold.jp'],
+  },
 };
 
 module.exports = nextConfig;
