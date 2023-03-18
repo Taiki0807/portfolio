@@ -1,6 +1,14 @@
 @media (min-width: 768px) {
   .bodycontainer {
-    width: 1300px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .bodycontainer {
+    width: 100%;
+    padding: 20px;
     margin: auto;
   }
 }
