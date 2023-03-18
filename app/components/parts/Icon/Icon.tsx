@@ -2,7 +2,7 @@ import Link from 'next/link';
 import style from './Icon.module.css';
 
 interface Props {
-  color?: 'black' | 'blue' | 'white';
+  color?: 'black' | 'cyan' | 'white';
   children: React.ReactNode;
   name: string;
   url: string;
