@@ -1,17 +1,5 @@
-.changeCard ul {
-  list-style: none;
-  border: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px 30px;
-  padding: 30px;
-}
-li.changeItem {
-  width: 25%;
-}
 .changeItemTxt p.itemTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.56;
   margin: 0;
   font-weight: bold;
@@ -31,7 +19,7 @@ li.changeItem {
   margin: 0 0.1em 0.6em 0;
   padding: 0.45em;
   line-height: 1;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-decoration: none;
   color: #0000ee;
   background-color: #fff;
@@ -45,13 +33,13 @@ p.itemCat {
   background: #6bb6ff;
   color: #fff;
   border-radius: 9999px;
-  font-size: 1rem;
+  font-size: 1em;
   display: inline-block;
   padding: 1px 12px 0px;
   z-index: 2;
 }
 
-li.changeItem a {
+.changeItem a {
   display: flex;
   flex-direction: column;
   border: none;
@@ -66,26 +54,31 @@ li.changeItem a {
   position: relative;
   text-decoration: none;
 }
-li.changeItem a:hover {
+.changeItem a:hover {
   box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%),
     0 0 5px rgb(0 0 0 / 10%);
   transform: translateY(-10px);
 }
-li.changeItem a .changeItemTxt {
+.changeItem a .changeItemTxt {
   width: 100%;
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 10px;
 }
-li.changeItem a .img {
+.changeItem a .img {
   width: 100%;
   margin: 0 0 12px;
   object-fit: contain;
   position: relative !important;
 }
-
-@media screen and (max-width: 767px) {
-  li.changeItem {
+@media screen and (max-width: 952px) {
+  .changeItemTxt p.itemTitle {
+    font-size: 1.7rem;
+  }
+  p.itemCat {
+    font-size: 1.4em;
+  }
+  .changeCard {
     width: 100%;
     margin-bottom: 20px;
   }
