@@ -1,4 +1,12 @@
 import Image from 'next/image';
+import {
+  initialize,
+  mswDecorator,
+} from 'msw-storybook-addon';
+
+initialize();
+
+export const decorators = [mswDecorator];
 export const parameters = {
   nextjs: {
     appDirectory: true,
