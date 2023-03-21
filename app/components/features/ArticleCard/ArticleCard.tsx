@@ -18,6 +18,7 @@ export const ArticleCard = (props: Props): JSX.Element => {
             src={props.image}
             alt="image"
             fill
+            priority
           />
           <div className={style.changeItemTxt}>
             <p className={style.itemTitle}>{props.title}</p>
