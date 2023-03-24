@@ -1,6 +1,10 @@
 import { FaTag } from 'react-icons/fa';
 import style from './ArticleDetail.module.css';
 
+interface Tag {
+  id: number;
+  name: string;
+}
 interface Data {
   id: number;
   category: {
@@ -14,31 +18,42 @@ interface Data {
   thumbnail: string | null;
   lead_text: string;
   created_at: string;
+  updated_at: string;
+  tag: Tag[];
 }
 
 interface Props {
   data: Data;
 }
-
-export const ArticleDetail = ({
-  data,
-}: Props): JSX.Element => {
-  const dateStr = data.created_at;
+const formatDate = (dateStr: string) => {
   const dateObj = new Date(dateStr);
   const formattedDate = `${dateObj.getFullYear()}年${
     dateObj.getMonth() + 1
   }月${dateObj.getDate()}日`;
+  return formattedDate;
+};
+
+export const ArticleDetail = ({
+  data,
+}: Props): JSX.Element => {
+  const createdDate = formatDate(data.created_at);
+  const updateDate = formatDate(data.updated_at);
 
   return (
     <div className={style.article__wrapper}>
       <h1 className={style.title}>{data.title}</h1>
       <div className={style.categorytag}>
-        <FaTag />
-        {data.category.name}
+        {data.tag.map((tag: any) => (
+          <div key={tag.id} className={style.tag__item}>
+            <FaTag />
+            {tag.name}
+          </div>
+        ))}
       </div>
-      <p className={style.created_at}>
-        投稿日:{formattedDate}
-      </p>
+      <div className={style.day__item}>
+        <p>投稿日:{createdDate}</p>
+        <p>更新日:{updateDate}</p>
+      </div>
       <div className={style.article__item}>
         <div
           className={style.main}
@@ -51,7 +66,9 @@ export const ArticleDetail = ({
           <div
             className={style.toc}
             dangerouslySetInnerHTML={{
-              __html: data.toc_text,
+              __html: data.toc_text
+                ? data.toc_text
+                : 'none',
             }}
           ></div>
         </div>
