@@ -1,5 +1,9 @@
 import { getFetcher } from '@/utils/httpClient';
 
+type Tag = {
+  id: number;
+  name: string;
+};
 type Articles = {
   id: number;
   category: {
@@ -7,6 +11,7 @@ type Articles = {
     name: string;
     color: string;
   };
+  tag: Tag[];
   title: string;
   thumbnail: string | null;
   lead_text: string;
@@ -14,7 +19,10 @@ type Articles = {
 
 export const useArticles = async () => {
   const url = `/api/blog/posts/`;
-  const data: Articles[] = await getFetcher(url);
+  const data: Articles[] = await getFetcher(
+    url,
+    'no-store'
+  );
   return {
     Data: data,
   };
