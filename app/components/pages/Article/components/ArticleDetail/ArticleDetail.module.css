@@ -17,9 +17,11 @@
   color: rgb(0 0 0 / 60%);
   padding-left: 50px;
 }
-.created_at {
+.day__item {
   color: rgb(0 0 0 / 60%);
   padding-left: 50px;
+  display: flex;
+  gap: 0 10px;
 }
 .main {
   flex: 0.8;
@@ -34,6 +36,9 @@
 }
 .main img {
   max-width: 100%;
+}
+.main code {
+  border-radius: 6px;
 }
 .side {
   flex: 0.2;
@@ -74,6 +79,12 @@
   position: absolute;
   left: -10px;
   top: 0px;
+}
+.tag__item {
+  display: flex;
+  align-items: center;
+  gap: 0 3px;
+  margin: 5px 0;
 }
 @media screen and (max-width: 767px) {
   .side {
