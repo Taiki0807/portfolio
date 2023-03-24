@@ -8,6 +8,10 @@ interface Category {
   name: string;
   color: string;
 }
+interface Tag {
+  id: number;
+  name: string;
+}
 
 interface Data {
   id: number;
@@ -15,6 +19,7 @@ interface Data {
   title: string;
   thumbnail: string | null;
   lead_text: string;
+  tag: Tag[];
 }
 
 interface Props {
@@ -37,6 +42,8 @@ export const Page = ({ data }: Props): JSX.Element => {
                 data.thumbnail ||
                 'https://placehold.jp/320x185.png?text=No Image'
               }
+              tag={data.tag}
+              category={data.category}
             />
           );
         })}

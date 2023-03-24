@@ -21,10 +21,20 @@ export const Default: Story = {
           name: 'none',
           color: '#000000',
         },
+        tag: [
+          {
+            id: 1,
+            name: 'Next.js',
+          },
+          {
+            id: 2,
+            name: '機械学習',
+          },
+        ],
         title: 'Test2',
         thumbnail:
-          'http://34.82.101.16/media/1390_pc_thumb.jpg',
-        lead_text: 'テスト投稿です',
+          'http://localhost:8000/media/cb43da50-f107-4173-8050-78c7b8b4e9a7.jpg',
+        lead_text: 'Test投稿',
       },
       {
         id: 2,
@@ -33,10 +43,20 @@ export const Default: Story = {
           name: 'none',
           color: '#000000',
         },
+        tag: [
+          {
+            id: 1,
+            name: 'Next.js',
+          },
+          {
+            id: 2,
+            name: '機械学習',
+          },
+        ],
         title: 'Test2',
         thumbnail:
-          'http://34.82.101.16/media/1390_pc_thumb.jpg',
-        lead_text: 'テスト投稿です',
+          'http://localhost:8000/media/cb43da50-f107-4173-8050-78c7b8b4e9a7.jpg',
+        lead_text: 'Test投稿',
       },
     ],
   },

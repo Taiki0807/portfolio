@@ -12,6 +12,16 @@ export const handlers = [
             name: 'none',
             color: '#000000',
           },
+          tag: [
+            {
+              id: 1,
+              name: 'Next.js',
+            },
+            {
+              id: 2,
+              name: '機械学習',
+            },
+          ],
           main_text:
             '<h1>テスト</h1>\n' +
             '<h2>ssss</h2>\n' +
@@ -34,6 +44,7 @@ export const handlers = [
           thumbnail: null,
           lead_text: 'テスト',
           created_at: '2023-03-08T15:29:39+09:00',
+          updated_at: '2023-03-08T15:29:39+09:00',
         },
       ])
     );
