@@ -19,9 +19,6 @@ export const parameters = {
     },
   },
 };
-Image.propTypes = {
-  unoptimized: null,
-};
 Image.defaultProps = {
   unoptimized: true,
 };
