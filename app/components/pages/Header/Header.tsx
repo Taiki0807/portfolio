@@ -31,10 +31,10 @@ export const Header = (): JSX.Element => {
               <a href="/">Home</a>
             </li>
             <li className={style.nav__item}>
-              <a href="#about">About</a>
+              <a href="/#about">About</a>
             </li>
             <li className={style.nav__item}>
-              <a href="#articles">Articles</a>
+              <a href="/#articles">Articles</a>
             </li>
             <li>
               <Icon
