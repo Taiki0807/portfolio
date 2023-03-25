@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Page } from './Page';
+import { Loader } from './Loader';
 
 const meta = {
-  title: 'Page',
-  component: Page,
-} satisfies Meta<typeof Page>;
+  title: 'Loader',
+  component: Loader,
+} satisfies Meta<typeof Loader>;
 
 export default meta;
-type T = typeof Page;
+type T = typeof Loader;
 type Story = StoryObj<T>;
 
 export const Default: Story = {};

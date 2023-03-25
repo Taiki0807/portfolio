@@ -14,6 +14,7 @@ export const AboutCard = (): JSX.Element => {
             alt="icon"
             width={200}
             height={200}
+            priority={true}
           />
         </div>
         <div className={style.About__item}>
