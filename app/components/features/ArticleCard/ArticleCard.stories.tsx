@@ -15,5 +15,16 @@ export const Default: Story = {
     title: 'Test',
     url: '/',
     image: 'https://placehold.jp/320x185.png?text=サンプル',
+    category: {
+      id: 1,
+      name: 'test',
+      color: '#fff',
+    },
+    tag: [
+      {
+        id: 1,
+        name: 'Next.js',
+      },
+    ],
   },
 };
