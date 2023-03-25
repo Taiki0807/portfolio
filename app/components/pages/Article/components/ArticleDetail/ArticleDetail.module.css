@@ -30,6 +30,7 @@
   min-height: 100vh;
   padding-left: 50px;
   padding-right: 50px;
+  width: 100%;
 }
 .main h1 {
   border-bottom: 1px solid rgb(0 0 0 / 12%);
@@ -95,8 +96,13 @@
     border: 0;
     padding: 10px;
   }
-  .created_at {
+  .main pre {
+    overflow-x: scroll;
+  }
+  .day__item {
     padding: 10px;
+    font-size: 0.9em;
+    gap: 0 12px;
   }
   .categorytag {
     padding: 10px;
