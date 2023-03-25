@@ -26,7 +26,7 @@ export const ArticleCard = (props: Props): JSX.Element => {
             ''
           ) : (
             <p className={style.itemCat}>
-              props.category.name
+              {props.category.name}
             </p>
           )}
           <Image
