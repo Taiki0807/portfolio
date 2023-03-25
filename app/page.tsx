@@ -1,9 +1,10 @@
-import { Page } from './components/pages';
+import { TopPage } from './components/pages';
 
 export default function Home() {
   return (
     <div>
-      <Page />
+      {/* @ts-expect-error Server Component */}
+      <TopPage />
     </div>
   );
 }

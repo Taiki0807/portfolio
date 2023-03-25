@@ -7,7 +7,7 @@ const nextConfig = {
     dirs: ['app'],
   },
   images: {
-    domains: ['placehold.jp'],
+    domains: ['placehold.jp', 'localhost'],
   },
 };
 
