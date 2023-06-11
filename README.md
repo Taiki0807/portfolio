@@ -45,7 +45,7 @@ npm run type-check
 
 ## ディレクトリ構成
 
-### app/components/
+### app/\_components/
 
 各コンポーネントを配置
 
