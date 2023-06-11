@@ -1,17 +1,20 @@
 .header {
-  background: #0082e6;
-  height: 75px;
+  height: 61px;
   width: 100%;
+  border-bottom: 1px solid #dee2e6;
+  color: #1d2125;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 .logo {
-  color: white;
-  font-size: 32px;
-  line-height: 75px;
+  font-size: 1.7rem;
+  line-height: 61px;
   padding: 0 100px;
   font-weight: bold;
+  color: #1d2125;
 }
 .nav__wrapper {
-  line-height: 75px;
+  line-height: 61px;
   margin: 0;
   float: right;
   display: flex;
@@ -22,29 +25,17 @@
   display: inline-block;
   margin: 0 13px;
 }
+.nav__item:hover {
+  background-color: #f8f9fa;
+  transition: 0.5s;
+}
 .nav__item a {
-  color: white;
-  font-size: 16px;
+  color: #1d2125;
+  font-size: 1.1rem;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
   font-weight: 600;
-}
-.nav__item a:hover {
-  background: #1b9bff;
-  transition: 0.5s;
-}
-.github__icon {
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 300ms;
-  padding: 5px;
-}
-.github__icon:hover {
-  background: black;
 }
 .sr_only {
   position: absolute;
@@ -60,8 +51,8 @@
 .checkbtn {
   font-size: 28px;
   float: right;
-  line-height: 75px;
-  margin-right: 40px;
+  line-height: 61px;
+  margin-right: 2rem;
   cursor: pointer;
   display: none;
 }
@@ -85,7 +76,7 @@
   .nav__wrapper {
     position: absolute;
     width: 100%;
-    background-color: #2c3e50;
+    background-color: #ffff;
     text-align: center;
     flex-direction: column;
     justify-content: start;
@@ -95,11 +86,6 @@
   }
   .nav__wrapper li a {
     font-size: 20px;
-  }
-  .nav__item a:hover,
-  .nav__item a.active {
-    background: none;
-    color: #0082e6;
   }
   .nav__hidden {
     display: none;
