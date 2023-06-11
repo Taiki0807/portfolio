@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { FaGithub, FaBars } from 'react-icons/fa';
+import { FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 import style from './Header.module.css';
 import { Icon } from '@/app/_components/parts';
 
@@ -17,7 +17,11 @@ export const Header = (): JSX.Element => {
             className={style.checkbtn}
             onClick={MenuHandle}
           >
-            <FaBars color="white" />
+            {openMenu ? (
+              <FaTimes />
+            ) : (
+              <FaBars color="black" />
+            )}
           </div>
           <a href="/" className={style.logo}>
             Hosokawa-lab
@@ -38,7 +42,7 @@ export const Header = (): JSX.Element => {
             </li>
             <li>
               <Icon
-                color={'white'}
+                color={'black'}
                 url={'https://github.com/Taiki0807'}
                 name={'github'}
               >
