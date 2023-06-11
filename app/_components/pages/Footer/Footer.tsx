@@ -1,6 +1,6 @@
 import { FaGithub, FaTwitter } from 'react-icons/fa';
 import style from './Footer.module.css';
-import { Icon } from '@/app/components/parts';
+import { Icon } from '@/app/_components/parts';
 
 export const Footer = (): JSX.Element => {
   return (

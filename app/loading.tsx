@@ -1,4 +1,4 @@
-import { Loader } from './components/parts';
+import { Loader } from './_components/parts';
 
 const loading = () => {
   return (
