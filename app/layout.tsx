@@ -1,4 +1,4 @@
-import { Footer, Header } from './components/pages';
+import { Footer, Header } from './_components/pages';
 import './globals.css';
 import style from './layout.module.css';
 
