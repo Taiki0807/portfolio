@@ -1,5 +1,5 @@
 .bodycontainer {
-  min-height: calc(100vh - 75px - 130px);
+  min-height: calc(100vh - 61px - 130px);
 }
 @media (min-width: 768px) {
   .bodycontainer {
