@@ -1,7 +1,7 @@
 import { AboutCard } from '../index';
 import style from './Page.module.css';
-import { ArticleCard } from '@/app/components/features';
-import { Title } from '@/app/components/parts';
+import { ArticleCard } from '@/app/_components/features';
+import { Title } from '@/app/_components/parts';
 
 interface Category {
   id: number;

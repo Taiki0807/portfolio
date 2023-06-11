@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { FaGithub, FaBars } from 'react-icons/fa';
 import style from './Header.module.css';
-import { Icon } from '@/app/components/parts';
+import { Icon } from '@/app/_components/parts';
 
 export const Header = (): JSX.Element => {
   const [openMenu, setOpenMenu] = useState(false);

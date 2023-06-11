@@ -1,4 +1,4 @@
-import { Article } from '@/app/components/pages';
+import { Article } from '@/app/_components/pages';
 
 interface Props {
   params: { id: string };

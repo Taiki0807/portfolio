@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FaGithub, FaTwitter } from 'react-icons/fa';
 import style from './AboutCard.module.css';
-import { Icon } from '@/app/components/parts';
+import { Icon } from '@/app/_components/parts';
 
 export const AboutCard = (): JSX.Element => {
   return (
