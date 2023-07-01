@@ -59,6 +59,33 @@ export const Default: Story = {
         lead_text: 'Test投稿',
       },
     ],
+    works: [
+      {
+        id: 1,
+        category: {
+          id: 1,
+          name: 'Web Development',
+          color: '#FF0000',
+        },
+        tag: [
+          {
+            id: 1,
+            name: 'React',
+          },
+          {
+            id: 2,
+            name: 'TypeScript',
+          },
+        ],
+        title: 'My Portfolio',
+        thumbnail:
+          'https://placehold.jp/320x185.png?text=No Image',
+        description: 'This is my personal portfolio.',
+        githubLink:
+          'https://github.com/myusername/portfolio',
+        siteLink: 'https://myusername.github.io/portfolio',
+      },
+    ],
   },
   parameters: {
     msw: {
