@@ -19,16 +19,16 @@ interface Props {
 
 export const ArticleCard = (props: Props): JSX.Element => {
   return (
-    <div id="articles" className={style.changeCard}>
-      <div className={style.changeItem}>
-        <a href={props.url}>
-          {props.category.name === 'none' ? (
-            ''
-          ) : (
-            <p className={style.itemCat}>
-              {props.category.name}
-            </p>
-          )}
+    <div className={style.changeItem}>
+      <a href={props.url}>
+        {props.category.name === 'none' ? (
+          ''
+        ) : (
+          <p className={style.itemCat}>
+            {props.category.name}
+          </p>
+        )}
+        <div className={style.image__container}>
           <Image
             className={style.img}
             src={props.image}
@@ -36,16 +36,16 @@ export const ArticleCard = (props: Props): JSX.Element => {
             fill
             priority
           />
-          <div className={style.changeItemTxt}>
-            <p className={style.itemTitle}>{props.title}</p>
-            <ul className={style.itemTag}>
-              {props.tag.map((data: any) => {
-                return <li key={data.id}>{data.name}</li>;
-              })}
-            </ul>
-          </div>
-        </a>
-      </div>
+        </div>
+        <div className={style.changeItemTxt}>
+          <p className={style.itemTitle}>{props.title}</p>
+          <ul className={style.itemTag}>
+            {props.tag.map((data: any) => {
+              return <li key={data.id}>{data.name}</li>;
+            })}
+          </ul>
+        </div>
+      </a>
     </div>
   );
 };
