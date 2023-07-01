@@ -1,0 +1,33 @@
+.worksCard {
+  border: 0 solid #e5e7eb;
+}
+
+.image__container {
+  position: relative;
+  width: 100%;
+  opacity: 1;
+  aspect-ratio: 16/9;
+}
+.card__item {
+  padding: 1rem;
+  color: #313131;
+}
+.image {
+  object-fit: cover;
+  border: #00000027 solid 1px;
+}
+.card__item h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.tag {
+  margin-left: 1rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid gray;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
