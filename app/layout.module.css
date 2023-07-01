@@ -3,7 +3,7 @@
 }
 @media (min-width: 768px) {
   .bodycontainer {
-    max-width: 1400px;
+    max-width: 72rem;
     margin: auto;
     padding: 16px;
   }

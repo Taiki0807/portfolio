@@ -1,12 +1,13 @@
 import { Page } from './components';
+import { getWorks } from './getWorks';
 import { useArticles } from './useArticles';
 
 export const TopPage = async () => {
   const { Data } = await useArticles();
-  if (!Data) return <div>loading...</div>;
+  const { data } = await getWorks();
   return (
     <div>
-      <Page data={Data} />
+      <Page data={Data} works={data} />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 import { FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 import style from './Header.module.css';
@@ -23,22 +24,25 @@ export const Header = (): JSX.Element => {
               <FaBars color="black" />
             )}
           </div>
-          <a href="/" className={style.logo}>
+          <Link href="/" className={style.logo}>
             Hosokawa-lab
-          </a>
+          </Link>
           <ul
             className={`${style.nav__wrapper} ${
               openMenu ? undefined : style.nav__hidden
             }`}
           >
             <li className={style.nav__item}>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className={style.nav__item}>
-              <a href="/#about">About</a>
+              <Link href="/#about">About</Link>
             </li>
             <li className={style.nav__item}>
-              <a href="/#articles">Articles</a>
+              <Link href="/#articles">Articles</Link>
+            </li>
+            <li className={style.nav__item}>
+              <Link href="/#works">Works</Link>
             </li>
             <li>
               <Icon
