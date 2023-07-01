@@ -7,7 +7,6 @@ interface Props {
 
 export const Article = async (props: Props) => {
   const { Data }: any = await useArticle(props.id);
-  if (!Data) return <div>loading...</div>;
   return (
     <div>
       <ArticleDetail data={Data} />
