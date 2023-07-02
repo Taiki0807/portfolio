@@ -14,11 +14,11 @@
   align-items: center;
   gap: 0 5px;
   color: rgb(0 0 0 / 60%);
-  padding-left: 50px;
+  padding-left: 3rem;
 }
 .day__item {
   color: rgb(0 0 0 / 60%);
-  padding-left: 50px;
+  padding-left: 3rem;
   display: flex;
   gap: 0 10px;
 }
@@ -26,11 +26,10 @@
   flex: 0.8;
   flex-wrap: wrap;
   border-right: 1px solid rgb(224, 224, 224);
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 1.5rem 3rem;
   width: 100%;
 }
-.main h1 {
+.main h2 {
   border-bottom: 1px solid rgb(0 0 0 / 12%);
 }
 .main img {
