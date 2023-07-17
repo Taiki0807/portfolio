@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { BiLinkExternal } from 'react-icons/bi';
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { Icon } from '../../parts';
 import { Work } from '../type';
 import style from './WorkDetail.module.css';
@@ -28,21 +27,12 @@ const WorkDetail = ({ data }: Props) => {
               url={data.siteLink}
               name={'link'}
             >
-              <FaLink size={32} />
+              <BiLinkExternal size={32} />
             </Icon>
           </div>
         </div>
         <div className={style.right__item}>
-          <div className={style.title__item}>
-            <h1>{data.title}</h1>
-            <Link
-              href={data.siteLink}
-              className={style.link__item}
-            >
-              <BiLinkExternal />
-              <p>アクセス</p>
-            </Link>
-          </div>
+          <h1>{data.title}</h1>
           <p>{data.description}</p>
         </div>
       </div>
