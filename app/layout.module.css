@@ -5,7 +5,7 @@
   .bodycontainer {
     max-width: 72rem;
     margin: auto;
-    padding: 16px;
+    padding: 4rem 2rem;
   }
 }
 @media (max-width: 767px) {
