@@ -7,7 +7,7 @@ const nextConfig = {
     dirs: ['app'],
   },
   images: {
-    domains: ['placehold.jp', 'localhost'],
+    domains: ['placehold.jp', 'storage.googleapis.com'],
   },
 };
 
