@@ -81,3 +81,30 @@
 .toc li a {
   color: black;
 }
+
+@media screen and (max-width: 767px) {
+  .side {
+    display: none;
+  }
+  .work__top {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; /* 必要に応じて他の要素に合わせて自動調整 */
+    gap: 1rem;
+  }
+  .social__buttons {
+    padding: 0;
+  }
+  .right__item h1 {
+    font-size: 1.5em;
+    line-height: 1.5rem;
+    gap: 0;
+  }
+  .main {
+    flex: 1;
+    border: 0;
+    padding: 1rem;
+  }
+  .main pre {
+    overflow-x: scroll;
+  }
+}
