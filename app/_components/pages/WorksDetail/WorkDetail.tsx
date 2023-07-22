@@ -13,7 +13,14 @@ const WorkDetail = ({ data }: Props) => {
     <div>
       <div className={style.work__top}>
         <div className={style.image__container}>
-          <Image src={data.thumbnail} alt="" fill />
+          <Image
+            src={
+              data.thumbnail ||
+              'https://placehold.jp/320x185.png?text=No Image'
+            }
+            alt={data.title || 'No Image'}
+            fill
+          />
           <div className={style.social__buttons}>
             <Icon
               color={'black'}
