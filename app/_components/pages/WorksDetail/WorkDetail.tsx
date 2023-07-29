@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Twemoji } from 'react-emoji-render';
 import { BiLinkExternal } from 'react-icons/bi';
 import { FaGithub } from 'react-icons/fa';
 import { Icon } from '../../parts';
@@ -9,35 +10,43 @@ interface Props {
   data: Work;
 }
 const WorkDetail = ({ data }: Props) => {
+  const containerClassName = data.thumbnail
+    ? style.work__top
+    : style.worktop_emoji;
   return (
     <div>
-      <div className={style.work__top}>
-        <div className={style.image__container}>
-          <Image
-            src={
-              data.thumbnail ||
-              'https://placehold.jp/320x185.png?text=No Image'
-            }
-            alt={data.title || 'No Image'}
-            fill
-          />
-          <div className={style.social__buttons}>
-            <Icon
-              color={'black'}
-              url={data.githubLink}
-              name={'github'}
-            >
-              <FaGithub size={32} />
-            </Icon>
-            <Icon
-              color={'cyan'}
-              url={data.siteLink}
-              name={'link'}
-            >
-              <BiLinkExternal size={32} />
-            </Icon>
+      <div className={containerClassName}>
+        {data.thumbnail ? (
+          <div className={style.image__container}>
+            <Image
+              src={data.thumbnail}
+              alt={data.title || 'No Image'}
+              fill
+            />
+            <div className={style.social__buttons}>
+              <Icon
+                color={'black'}
+                url={data.githubLink}
+                name={'github'}
+              >
+                <FaGithub size={32} />
+              </Icon>
+              <Icon
+                color={'cyan'}
+                url={data.siteLink}
+                name={'link'}
+              >
+                <BiLinkExternal size={32} />
+              </Icon>
+            </div>
           </div>
-        </div>
+        ) : (
+          <Twemoji
+            className={style.postCardEmoji}
+            svg
+            text={'📝'}
+          />
+        )}
         <div className={style.right__item}>
           <h1>{data.title}</h1>
           <p>{data.description}</p>
