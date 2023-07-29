@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { Twemoji } from 'react-emoji-render';
 import style from './ArticleCard.module.css';
 
 interface Tag {
@@ -8,19 +10,20 @@ interface Tag {
 interface Props {
   title: string;
   url: string;
-  image: string;
+  image?: string;
   tag: Tag[];
   category: {
     id: number;
     name: string;
     color: string;
   };
+  emoji?: string;
 }
 
 export const ArticleCard = (props: Props): JSX.Element => {
   return (
     <div className={style.changeItem}>
-      <a href={props.url}>
+      <Link href={props.url}>
         {props.category.name === 'none' ? (
           ''
         ) : (
@@ -29,13 +32,21 @@ export const ArticleCard = (props: Props): JSX.Element => {
           </p>
         )}
         <div className={style.image__container}>
-          <Image
-            className={style.img}
-            src={props.image}
-            alt="image"
-            fill
-            priority
-          />
+          {props.image ? (
+            <Image
+              className={style.img}
+              src={props.image}
+              alt="image"
+              fill
+              priority
+            />
+          ) : (
+            <Twemoji
+              className={style.postCardEmoji}
+              svg
+              text={'📝'}
+            />
+          )}
         </div>
         <div className={style.changeItemTxt}>
           <p className={style.itemTitle}>{props.title}</p>
@@ -45,7 +56,7 @@ export const ArticleCard = (props: Props): JSX.Element => {
             })}
           </ul>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
