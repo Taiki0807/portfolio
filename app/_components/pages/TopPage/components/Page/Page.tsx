@@ -44,10 +44,7 @@ export const Page = ({
               key={`${index}`}
               title={data.title}
               url={`/article/${data.id}`}
-              image={
-                data.thumbnail ||
-                'https://placehold.jp/320x185.png?text=No Image'
-              }
+              image={data.thumbnail}
               tag={data.tag}
               category={data.category}
             />
@@ -62,10 +59,7 @@ export const Page = ({
               key={`${index}`}
               title={data.title}
               description={data.description}
-              imageUrl={
-                data.thumbnail ||
-                'https://placehold.jp/320x185.png?text=No Image'
-              }
+              imageUrl={data.thumbnail}
               link={`/works/${data.id}`}
               category={data.category.name}
             />
