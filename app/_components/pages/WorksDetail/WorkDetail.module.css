@@ -5,10 +5,27 @@
   gap: 0 2.5rem;
   padding: 1rem 0;
 }
+.worktop_emoji {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .image__container {
   position: relative;
   aspect-ratio: 16/9;
   border: #00000027 solid 1px;
+}
+.postCardEmoji img {
+  width: 5rem !important;
+  height: 5rem !important;
+  margin: 0px 0.05em 0px 0.1em;
+}
+.postCardEmoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 .right__item {
   display: flex;
